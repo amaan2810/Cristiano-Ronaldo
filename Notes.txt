@@ -1,0 +1,37 @@
+drop multiple columns - dist of shot.1, pow of shot.1, knock match.1, rem min.1, rem sec.1, date_of_game
+
+area_of_shot: fillna by mode
+
+distance_of_shot: fillna median
+
+game_season: ffill
+
+home/away: ffill
+
+knockout_match: ffill
+
+lat/lng: ffill
+
+location_x: fillna by median
+
+location_y: fillna by 0, most freq value
+
+match_event_id: drop
+
+match_id: drop
+
+power_of_shot: ffill
+
+range_of_shot: fillna by mode
+
+remaining_min: fillna by median
+
+remaining_sec: fillna by median
+
+shot_basics: fillna by mode
+
+shot_id_number: drop from X
+
+team_id: drop
+
+team_name: drop
